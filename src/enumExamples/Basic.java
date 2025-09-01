@@ -2,12 +2,22 @@ package enumExamples;
 
 public class Basic {
     enum Week{
-        Monday , Tuesday , Wednesday , Thursday , Friday , Saturday , Sunday
-        // need of enums : sometimes for a particular class , it should need only some variables , we don't need to have extra variables or so
+        Monday , Tuesday , Wednesday , Thursday , Friday , Saturday , Sunday;
+        // need of enums : sometimes for a particular class , it should need only some objects  , we don't need to have extra objects or so
         // enums are  special types of constants we can say
         // basic configuaration of enum is always public  , static & final
         // since it's final you cannot inherit it to the child classes
         // type is Week
+
+        Week(){
+            System.out.println("constructor called for " + this);
+        }
+        // this is not public or protected  , only private or default
+        // why ?
+        // we don't want to create a new objects
+
+        // internally : public static final Week Monday = new Week();
+
 
     }
 
