@@ -17,6 +17,9 @@ public class IntroHashMap {
         // for (Integer key : keys) {
         // System.out.println(map.get(key));
         // }
+//        System.out.println("This is the retrieving using the keyvalue");
+//        System.out.println(map.get("yash")); --> this will give the null as we can't get the value by directly itself
+        System.out.println("printing using the keyset()");
         for (int i : map.keySet()) {
             System.out.println(map.get(i));
 
